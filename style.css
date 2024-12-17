@@ -1,0 +1,146 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #9ed0d6;
+}
+
+h1 {
+    background-color: #5e0e0e;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.option {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: #2d2d2d;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    flex-wrap: wrap; /* Allows options to wrap on smaller screens */
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#player-score, #computer-score {
+    font-size: 4rem;
+}
+
+.message-container {
+    margin-top: 5rem;
+}
+
+#message {
+    background-color: #5e0e0e;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Responsive Styles */
+
+/* For smaller devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+    .options {
+        gap: 2rem;
+    }
+    
+    .option {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .scoreboard {
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+
+    #player-score, #computer-score {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: normal;
+        padding: 1rem;
+    }
+
+    #message {
+        font-size: 1.5rem;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .options {
+        flex-direction: column; /* Stacks options vertically */
+        gap: 1rem;
+    }
+
+    .option {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .scoreboard {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    #player-score, #computer-score {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    #message {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}
